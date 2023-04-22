@@ -1,0 +1,151 @@
+body {
+  background-color: #dde1e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cnt_custom {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background-color: #dde1e7;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.6);
+}
+.todo-inp {
+  font-weight: 700;
+  color: #0b090a;
+  background: #dde1e7;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+.todo-inp:focus {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05);
+}
+.btn-sub {
+  position: absolute;
+  top: 10px;
+  right: 19%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-right: 20px;
+}
+.btn-sub a {
+  margin-top: 9px;
+  margin-left: 18px;
+  z-index: 0;
+  text-align: center;
+  width: 30px;
+  height: 28px;
+  transition: all 0.3s ease-out;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+
+.btn-sub a.add_btn:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-sub a.upd_btn:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-sub a i {
+  transition: all 0.3s ease-out;
+  line-height: 28px;
+  font-size: 20px;
+  color: #ef233c;
+}
+
+.btn-sub a i:hover {
+  color: #198754;
+  z-index: 4;
+}
+#todo-list {
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: -3px -3px 7px #ffffffa6, 3px 3px 5px rgba(94, 104, 121, 0.712);
+}
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background: #dde1e7;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ef233c;
+  padding: 15px;
+  transition: 0.2s ease-in-out;
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+#todo-list li:hover {
+  cursor: pointer;
+  color: #198754;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.edit-btn{
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    align-items: center;
+    border-radius: 30px;
+    padding: 3px 6px;
+    background: #e0e0e0;
+    box-shadow: -3px -3px 7px #ffffffb2,3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+.edit-btn i{
+    color: #e5383b;
+    line-height: 22px;
+    font-size: 15px;
+}
+.edit-btn:hover{
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.edit-btn :hover i{
+    color:#198754
+}
+.del-btn{
+    cursor: pointer;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    align-items: center;
+    padding: 3px 6px;
+    background: #e0e0e0;
+    box-shadow:  -3px -3px 7px #ffffffb2,3px 3px 5px rgba(94, 104, 121, 0.8);
+}
+.del-btn:hover{
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.del-btn:hover i{
+    color: #198754;
+}
+.del-btn i{
+    color: #ef233c;
+    line-height: 22px;
+    font-size: 15px;
+}
+
